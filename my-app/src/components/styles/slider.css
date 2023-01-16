@@ -1,0 +1,83 @@
+.slider {
+  background-color: #003585;
+  display: flex;
+  position: absolute;
+  width: 100%;
+}
+.slider-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
+}
+.canon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.canon h2 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 55px;
+}
+.canon p {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 55px;
+}
+.slider-buttons {
+  display: flex;
+  gap: 30px;
+}
+.slider-shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #003585;
+  border-radius: 25px;
+  width: 144px;
+  height: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.slider-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #003585;
+  color: #a7f65c;
+  border-radius: 25px;
+  width: 144px;
+  height: 50px;
+  border: 1px solid #a7f65c;
+  font-weight: 600;
+  cursor: pointer;
+}
+.slider-right {
+  display: flex;
+  margin-top: 78px;
+}
+.right-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #003585;
+  background-color: #a7f65c;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+
+  position: relative;
+  margin-top: 350px;
+  margin-left: -130px;
+}
+.right-text p {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+}
