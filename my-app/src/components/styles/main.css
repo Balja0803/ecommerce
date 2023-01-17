@@ -1,0 +1,28 @@
+.products-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #003585;
+  text-shadow: 1px 0px 0px #000000;
+  font-size: 27px;
+  line-height: 41px;
+}
+.product-filter {
+  display: flex;
+  gap: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  list-style: none;
+}
+.product-filter li {
+  border: 1px solid #003585;
+  border-radius: 20px;
+  width: 139px;
+  height: 45px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

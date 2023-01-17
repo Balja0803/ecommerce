@@ -1,7 +1,7 @@
 .slider {
   background-color: #003585;
   display: flex;
-  position: absolute;
+
   width: 100%;
 }
 .slider-left {

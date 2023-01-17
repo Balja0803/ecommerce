@@ -3,7 +3,7 @@ export const data = [
     description:
       "Customize a Samsung Bespoke 3- or 4-door French door refrigerator or 4-Door Flex refrigerator with panels available in multiple colors and finishes. Plus, shop for matching appliances.",
     spec: [{ height: "69 7/8 inches" }, { width: "35 3/4 inches" }],
-    name: "4-Door Flex",
+    name: "4-Door Flex Fridge",
     id: "a4bbe2cc",
     image:
       "https://image-us.samsung.com/SamsungUS/home/home-appliances/refrigerators/090321/rs22t5561sr/RS22T5561SR_01_SIlver_samsung.jpg?$product-details-jpg$",
@@ -97,10 +97,10 @@ export const data = [
     description:
       "Redmi PadAll in one, pad for fun90Hz buttery smooth displayHigh-performance MediaTek Helio G99Long-lasting 8000mAh batteryFlagship-level unibody design",
     spec: [
-      "{Size: 10.61 display}",
-      " {Resolution: 1200 x 2000}",
-      "{Refresh rate: 90Hz}",
-      "{Brightness : 400nits (typ)}",
+      { Size: "10.61 display" },
+      { Resolution: "1200 x 2000" },
+      { RefreshRate: "90Hz" },
+      { Brightness: "400nits" },
     ],
     name: "Redmi Pad",
     id: "",
@@ -134,12 +134,12 @@ export const data = [
       { DisplayResolution: "2880*1800Keyboard" },
     ],
     name: "Xiaomi Mi Book Air 13",
-    id: "",
+    id: "429998c0",
     image:
       "https://www.xiaomihome.global/wp-content/uploads/2022/11/xiaomi-book-air-13-2022-cover-1.webp",
     price: 1200,
     stock: 10,
-    sale: 247,
+    sale: 24,
     category: "laptop",
   },
 
@@ -149,10 +149,10 @@ export const data = [
     name: "LED bulbs",
     id: "8bf7f5fc-92f3-11ed-a1eb-0242ac120002",
     image:
-      "​​https://cdn.vox-cdn.com/thumbor/twhweqrG_obtz7SoYGWKld_qgMM=/0x0:5250x3600/1400x1400/filters:focal(2625x1800:2626x1801)/cdn.vox-cdn.com/uploads/chorus_asset/file/22823524/philips_smart_led_bulb_package.jpg",
+      "https://cdn.vox-cdn.com/thumbor/twhweqrG_obtz7SoYGWKld_qgMM=/0x0:5250x3600/1400x1400/filters:focal(2625x1800:2626x1801)/cdn.vox-cdn.com/uploads/chorus_asset/file/22823524/philips_smart_led_bulb_package.jpg",
     price: 80,
     stock: 4,
-    sale: 2,
+    sale: 0,
     category: "appliances",
   },
 
@@ -166,7 +166,7 @@ export const data = [
     ],
     name: "Philips Oven",
     id: "8bf7f8d6-92f3-11ed-a1eb-0242ac120002",
-    image: "​​https://m.media-amazon.com/images/I/618O0ywM1SL._SX522_.jpg",
+    image: "https://m.media-amazon.com/images/I/618O0ywM1SL._SX522_.jpg",
     price: 7920,
     stock: 164,
     sale: 27,
@@ -184,7 +184,7 @@ export const data = [
     ],
     name: "Sketch Pad",
     id: "9afc4a40-92f7-11ed-a1eb-0242ac120002",
-    image: "​​https://m.media-amazon.com/images/I/61sC5JwNrpL._AC_SX679_.jpg",
+    image: "https://m.media-amazon.com/images/I/61sC5JwNrpL._AC_SX679_.jpg",
     price: 215.99,
     stock: 15,
     sale: 12,
@@ -218,8 +218,7 @@ export const data = [
     ],
     name: "Beats Solo3 Headphones",
     id: "4ab6599a",
-    image:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.apple.com%2Fshop%2Fproduct%2FMX432LL%2FA%2Fbeats-solo3-wireless-headphones-the-beats-icon-collection-matte-black&psig=AOvVaw2tl_AIH02av1Ou9DkxSqTX&ust=1673669056089000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJCPzZ7Vw_wCFQAAAAAdAAAAABAE",
+    image: "https://m.media-amazon.com/images/I/51QxA-98Q+L._AC_SX679_.jpg",
     price: 200,
     stock: 60,
     sale: 10,
@@ -286,7 +285,7 @@ export const data = [
     image: "https://m.media-amazon.com/images/I/81c+9BOQNWL._AC_SX679_.jpg",
     price: 1094,
     stock: 3,
-    sale: 1,
+    sale: 15,
     category: "tablets",
   },
   {
@@ -308,7 +307,7 @@ export const data = [
     image: "https://m.media-amazon.com/images/I/61b2BrYtVGL._AC_SX679_.jpg",
     price: 189,
     stock: 22,
-    sale: 0.4,
+    sale: 40,
     category: "tablets",
   },
   {
@@ -330,7 +329,7 @@ export const data = [
     image: "https://m.media-amazon.com/images/I/81d74GHCPEL._AC_SX679_.jpg",
     price: 1099,
     stock: 3,
-    sale: 0.2,
+    sale: 20,
     category: "tablets",
   },
   {
@@ -354,7 +353,7 @@ export const data = [
     image: "https://m.media-amazon.com/images/I/51qmNla8aTL._AC_SX679_.jpg",
     price: 1399.99,
     stock: 5,
-    sale: 0.1,
+    sale: 10,
     category: "tablets",
   },
   {
@@ -378,7 +377,7 @@ export const data = [
     image: "https://m.media-amazon.com/images/I/51D3B+8L7DL._AC_SX679_.jpg",
     price: 1399.99,
     stock: 4,
-    sale: 0.1,
+    sale: 0,
     category: "tablets",
   },
 ];

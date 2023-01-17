@@ -1,0 +1,15 @@
+.productCard {
+  border: 2px solid gray;
+  width: 20%;
+  border-radius: 25px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.productImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
