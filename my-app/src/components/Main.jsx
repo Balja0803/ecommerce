@@ -39,7 +39,7 @@ export default function Main() {
         ))}
       </div>
       <SaleUpTo />
-      <RandomProducts data={data.slice(0, 3)} />
+      <RandomProducts data={data.slice(8, 11)} />
       <Brands />
     </div>
   );
