@@ -1,6 +1,11 @@
 import Logo from "./subcomponents/Logo";
 import "./styles/header.css";
+import { useNavigate } from "react-router-dom";
 export default function Header() {
+  const navigate = useNavigate();
+  const signIn = () => {
+    navigate("login");
+  };
   return (
     <div className="header">
       <Logo />
@@ -13,7 +18,7 @@ export default function Header() {
         <button>Search</button>
       </div>
       <div className="header-right">
-        <div className="sign-in">
+        <div onClick={signIn} className="sign-in">
           <svg
             width="25"
             height="24"

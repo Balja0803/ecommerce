@@ -2,6 +2,9 @@ import Products from "./subcomponents/Products";
 import Slider from "./subcomponents/Slider";
 import { data } from "./util/data";
 import "./styles/main.css";
+import SaleUpTo from "./subcomponents/SaleUpTo";
+import RandomProducts from "./subcomponents/RandomProducts";
+import Brands from "./subcomponents/Brands";
 
 export default function Main() {
   return (
@@ -35,6 +38,9 @@ export default function Main() {
           />
         ))}
       </div>
+      <SaleUpTo />
+      <RandomProducts data={data.slice(0, 3)} />
+      <Brands />
     </div>
   );
 }

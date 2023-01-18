@@ -1,0 +1,15 @@
+.randomProducts {
+  display: flex;
+}
+.firstProduct img {
+  width: 425px;
+  height: 416px;
+}
+.secondProduct img {
+  width: 282px;
+  height: 168px;
+}
+.thirdProduct img {
+  width: 282px;
+  height: 168px;
+}

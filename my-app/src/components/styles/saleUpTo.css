@@ -1,0 +1,39 @@
+.saleupto {
+  background: url(../../../public/images/laptopbg.png);
+  width: 1315px;
+  height: 417px;
+  border-radius: 20px;
+  margin: 64px;
+  display: flex;
+  flex-direction: column;
+}
+.saleupto div {
+  margin-top: 91px;
+  margin-left: 913px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 21px;
+  font-size: 14px;
+  width: 150px;
+  height: 45px;
+  background-color: #eda415;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.saleupto h2 {
+  margin-top: 36px;
+  margin-left: 797px;
+  font-size: 41px;
+  line-height: 61.5px;
+  color: #2e8fc5;
+  font-weight: 700;
+}
+.saleupto p {
+  margin-left: 901px;
+  font-weight: 500;
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+}
