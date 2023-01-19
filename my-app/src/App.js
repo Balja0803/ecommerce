@@ -6,15 +6,37 @@ import { Routes, Route } from "react-router-dom";
 import { data } from "./components/util/data.js";
 import Login from "./components/subcomponents/Login";
 import Admin from "./components/subcomponents/Admin";
+import { users } from "../src/components/util/users.js";
+import User from "./components/subcomponents/User";
 
 function App() {
+  // localStorage.removeItem("currentUser")
   return (
     <div className="App">
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/admin" element={<Admin />} />
+        <Route
+          path="/admin"
+          element={
+            localStorage.getItem("currentUser") === "admin" ? (
+              <Admin />
+            ) : (
+              <>No access</>
+            )
+          }
+        />
+        <Route
+          path="/user"
+          element={
+            localStorage.getItem("currentUser") === "user" ? (
+              <User />
+            ) : (
+              <>No access</>
+            )
+          }
+        />
       </Routes>
       <Footer />
     </div>

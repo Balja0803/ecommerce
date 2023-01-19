@@ -5,23 +5,25 @@ import { useNavigate } from "react-router-dom";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
+  const [isLogged, setIsLogged] = useState(false);
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("email is" + " " + email);
     console.log("password is" + " " + pass);
     console.log(users);
-    if (
-      users.map((user) => user.email === email) &&
-      users.map((user) => user.password === pass)
-    ) {
-      console.log("user zuv baina");
-      if (users.map((user, index) => user.role == "admin")) {
+    users.map((user) => {
+      if (user.email === email && user.password === pass) {
+        setIsLogged(true);
+        if (user.role === "admin") {
+          localStorage.setItem("currentUser", "admin");
+        } else if (user.role === "user") {
+          localStorage.setItem("currentUser", "user");
+          navigate("/user");
+        }
         navigate("/admin");
-      } else {
-        navigate(`/user/${users.map((user) => user.id)}`);
       }
-    }
+    });
   };
 
   return (
@@ -29,7 +31,6 @@ export default function Login() {
       <form onSubmit={handleSubmit}>
         <label for="email">Email</label>
         <input
-          value={email}
           onChange={(e) => setEmail(e.target.value)}
           id="email"
           name="email"
@@ -38,7 +39,6 @@ export default function Login() {
         ></input>
         <label for="password">Password</label>
         <input
-          value={pass}
           onChange={(e) => setPass(e.target.value)}
           id="password"
           name="password"
