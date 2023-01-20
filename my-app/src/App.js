@@ -8,9 +8,12 @@ import Login from "./components/subcomponents/Login";
 import Admin from "./components/subcomponents/Admin";
 import { users } from "../src/components/util/users.js";
 import User from "./components/subcomponents/User";
+import { useParams } from "react-router-dom";
 
 function App() {
   // localStorage.removeItem("currentUser")
+  const { id } = useParams();
+
   return (
     <div className="App">
       <Header />
