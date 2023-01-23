@@ -13,7 +13,7 @@ export default function Header() {
         <input
           id="searchBar"
           type="text"
-          placeholder="Search anything but Gwyndolin"
+          placeholder="Search anything but"
         ></input>
         <button>Search</button>
       </div>

@@ -3,7 +3,7 @@ export default function Brands() {
   return (
     <div className="brands">
       <div>
-        <img src="./images/brand4.png" alt="brandlogo"></img>
+        <img src="./images/brand4.png" alt="brandlogo" />
       </div>
       <div>
         <img src="./images/brand5.png" alt="brandlogo"></img>
