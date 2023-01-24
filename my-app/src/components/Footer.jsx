@@ -1,5 +1,5 @@
 import "./styles/footer.css";
-import Logo from "./subcomponents/Logo";
+import Logo from "../icons/Logo";
 export default function Footer() {
   return (
     <div className="footer">

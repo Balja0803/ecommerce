@@ -1,13 +1,8 @@
-import "../styles/logo.css";
-import { useNavigate } from "react-router-dom";
+import "../components/styles/logo.css";
+
 export default function Logo() {
-  const navigate = useNavigate();
-  const homeHandler = () => {
-    navigate("/");
-  };
   return (
     <svg
-      onClick={homeHandler}
       width="149"
       height="50"
       viewBox="0 0 149 50"

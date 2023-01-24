@@ -13,7 +13,7 @@ export default function Main() {
       <div className="products-title">
         <h3>Popular products</h3>
         <ul className="product-filter">
-          <li>Cameras</li>
+          <li>Appliance</li>
           <li>Laptops</li>
           <li>Tablets</li>
           <li>Mouse</li>
@@ -28,7 +28,7 @@ export default function Main() {
           justifyContent: "space-between",
         }}
       >
-        {data.slice(0, 8).map((contents) => (
+        {data.map((contents) => (
           <Products
             key={contents.id}
             image={contents.image}
@@ -39,6 +39,7 @@ export default function Main() {
         ))}
       </div>
       <SaleUpTo />
+      <h3>Random Products</h3>
       <RandomProducts data={data.slice(8, 11)} />
       <Brands />
     </div>
