@@ -5,8 +5,17 @@ import "./styles/main.css";
 import SaleUpTo from "./subcomponents/SaleUpTo";
 import RandomProducts from "./subcomponents/RandomProducts";
 import Brands from "./subcomponents/Brands";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function Main() {
+  const [products, setProducts] = useState();
+  useEffect(() => {
+    axios.get("http://localhost:2020/products").then((res) => {
+      console.log("serverees data:", res.data);
+      setProducts(res.data);
+    });
+  }, []);
   return (
     <div className="main">
       <Slider />
@@ -28,15 +37,16 @@ export default function Main() {
           justifyContent: "space-between",
         }}
       >
-        {data.map((contents) => (
-          <Products
-            key={contents.id}
-            image={contents.image}
-            name={contents.name}
-            price={contents.price}
-            sales={contents.sale}
-          />
-        ))}
+        {products &&
+          products.map((contents) => (
+            <Products
+              key={contents.id}
+              image={contents.image}
+              name={contents.name}
+              price={contents.price}
+              sales={contents.sale}
+            />
+          ))}
       </div>
       <SaleUpTo />
       <h3>Random Products</h3>
