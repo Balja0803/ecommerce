@@ -1,7 +1,6 @@
 import "../styles/products.css";
-
+import Button from "react-bootstrap/Button";
 export default function Products(props) {
-
   return (
     <div key={props.id} className="productCard">
       <img src={props.image} alt="product-img" className="productImage"></img>
@@ -11,6 +10,7 @@ export default function Products(props) {
         <div className="displayStack_1">
           <div className="productPrice"> ${props.price}</div>
           <div className="productSales"> {props.sales} % sale</div>
+          <Button>test</Button>
         </div>
       </div>
     </div>
