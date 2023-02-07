@@ -7,15 +7,20 @@ import RandomProducts from "./subcomponents/RandomProducts";
 import Brands from "./subcomponents/Brands";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { useContext } from "react";
+import { ProductContext } from "../App";
 
 export default function Main() {
-  const [products, setProducts] = useState();
-  useEffect(() => {
-    axios.get("http://localhost:2020/products").then((res) => {
-      console.log("serverees data:", res.data);
-      setProducts(res.data);
-    });
-  }, []);
+  // const [products, setProducts] = useState();
+  // useEffect(() => {
+  //   axios.get("http://localhost:2020/products").then((res) => {
+  //     console.log("serverees data:", res.data);
+  //     setProducts(res.data);
+  //   });
+  // }, []);
+
+  const { products } = useContext(ProductContext);
+
   return (
     <div className="main">
       <Slider />
