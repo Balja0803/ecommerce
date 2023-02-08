@@ -3,12 +3,21 @@ import { useContext } from "react";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDataContext } from "../../layout/DataContext";
+import axios from "axios";
+import { useEffect } from "react";
 export default function Login() {
   const { users, setUsers } = useDataContext();
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [isLogged, setIsLogged] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    axios.get("http://localhost:2020/users").then((res) => {
+      console.log("users list:", res.data);
+      setUsers(res.data);
+    });
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
