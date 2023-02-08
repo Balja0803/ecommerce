@@ -1,8 +1,10 @@
 import "../styles/login.css";
-
+import { useContext } from "react";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useDataContext } from "../../layout/DataContext";
 export default function Login() {
+  const { users, setUsers } = useDataContext();
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [isLogged, setIsLogged] = useState(false);

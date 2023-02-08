@@ -8,18 +8,17 @@ import Brands from "./subcomponents/Brands";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useContext } from "react";
-import { ProductContext } from "../App";
+
+import { useDataContext } from "../layout/DataContext";
 
 export default function Main() {
-  // const [products, setProducts] = useState();
-  // useEffect(() => {
-  //   axios.get("http://localhost:2020/products").then((res) => {
-  //     console.log("serverees data:", res.data);
-  //     setProducts(res.data);
-  //   });
-  // }, []);
-
-  const { products } = useContext(ProductContext);
+  const { products, setProducts } = useDataContext();
+  useEffect(() => {
+    axios.get("http://localhost:2020/products").then((res) => {
+      console.log("serverees data:", res.data);
+      setProducts(res.data);
+    });
+  }, []);
 
   return (
     <div className="main">
