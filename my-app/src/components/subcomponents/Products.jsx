@@ -1,17 +1,27 @@
 import "../styles/products.css";
-import Button from "react-bootstrap/Button";
-export default function Products(props) {
-  return (
-    <div key={props.id} className="productCard">
-      <img src={props.image} alt="product-img" className="productImage"></img>
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { useDataContext } from "../../layout/DataContext";
 
-      <div className="productCard-content">
-        <h3 className="productName">{props.name}</h3>
-        <div className="displayStack_1">
-          <div className="productPrice"> ${props.price}</div>
-          <div className="productSales"> {props.sales} % sale</div>
-          <Button>test</Button>
-        </div>
+export default function Products() {
+  const { products, setProducts } = useDataContext();
+  useEffect(() => {
+    axios.get("http://localhost:2020/products").then((res) => {
+      console.log("server data:", res.data);
+      setProducts(res.data);
+    });
+  }, []);
+  console.log("baraa:", products);
+  return (
+    <div className="products">
+      <div>Popular products</div>
+      <div>
+        <ul>
+          {products.map((product) => {
+            console.log(product.category);
+            <li>{product.category}</li>;
+          })}
+        </ul>
       </div>
     </div>
   );

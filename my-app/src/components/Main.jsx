@@ -12,7 +12,7 @@ import { useContext } from "react";
 import { useDataContext } from "../layout/DataContext";
 
 export default function Main() {
-  const { products, setProducts } = useDataContext();
+  const { setProducts } = useDataContext();
   useEffect(() => {
     axios.get("http://localhost:2020/products").then((res) => {
       console.log("serverees data:", res.data);
@@ -23,7 +23,8 @@ export default function Main() {
   return (
     <div className="main">
       <Slider />
-      <div className="products-title">
+      <Products />
+      {/* <div className="products-title">
         <h3>Popular products</h3>
         <ul className="product-filter">
           <li>Appliance</li>
@@ -51,7 +52,7 @@ export default function Main() {
               sales={contents.sale}
             />
           ))}
-      </div>
+      </div> */}
       <SaleUpTo />
       <h3>Random Products</h3>
       <RandomProducts data={data.slice(8, 11)} />
