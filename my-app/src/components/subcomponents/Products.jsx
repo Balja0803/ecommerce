@@ -17,10 +17,11 @@ export default function Products() {
       <div>Popular products</div>
       <div>
         <ul>
-          {products.map((product) => {
-            console.log(product.category);
-            <li>{product.category}</li>;
-          })}
+          <li>Cameras</li>
+          <li>Laptops</li>
+          <li>Tablets</li>
+          <li>Mouse</li>
+          <li>Sale</li>
         </ul>
       </div>
     </div>
