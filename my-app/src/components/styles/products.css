@@ -13,3 +13,11 @@
   height: 150px;
   border-radius: 5px;
 }
+.product-categories {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+.product-upper {
+  display: flex;
+}

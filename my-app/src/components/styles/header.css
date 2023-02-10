@@ -16,7 +16,7 @@
 ::placeholder {
   padding-left: 10px;
 }
-.header button {
+.search-button {
   width: 132px;
   height: 48px;
   border-radius: 0px 20px 20px 0px;
@@ -52,7 +52,7 @@
 }
 .cart {
   display: flex;
-  gap: 3px;
+  gap: 10px;
 }
 .cart p {
   color: #fff;

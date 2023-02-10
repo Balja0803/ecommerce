@@ -9,10 +9,10 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { useContext } from "react";
 
-import { useDataContext } from "../layout/DataContext";
+import { ProductContext } from "../layout/ProductContext";
 
 export default function Main() {
-  const { setProducts } = useDataContext();
+  const { setProducts } = useContext(ProductContext);
   useEffect(() => {
     axios.get("http://localhost:2020/products").then((res) => {
       console.log("serverees data:", res.data);
